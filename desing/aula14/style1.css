@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/*
+icons
+search
+home
+apps
+layers
+assignment
+bar_chart
+*/
+
+:root {
+  /* Icons */
+  --icon-color-default: #777;
+  --icon-color-search: #252525;
+
+  /* Header */
+  --bg-header: #438afc;
+
+  /* perfil */
+  --bg-perfil: #3761b7;
+
+  /* Sidebar */
+  --primary-color: #448aff;
+  --bg-sidebar: #ffffff;
+  --text-primary: #555555;
+  --text-muted: #999999;
+  --section-title: #448aff;
+  --border-color: #eeeeee;
+  --hover-bg: #f8f9fa;
+  --active-shadow: 0 4px 15px rgba(68, 138, 255, 0.3);
+  --bg-page: #f5f5f5;
+  --icon-roxo: #8088e8;
+  --icon-red: #eb5c65;
+  --icon-green: #1db26d;
+  --icon-blue: #4e83d0;
+
+  /* Content */
+  --bg-content: #ffb2b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h4{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+h5{
+  font-weight: 400;
+  color: var(--text-muted);
+
+}
+.icon-roxo{
+  color: var(--icon-roxo);
+}
+.icon-blue{
+  color: var(--icon-blue);
+}
+.icon-green{
+  color: var(--icon-green);
+}
+.icon-red{
+  color: var(--icon-red);
+}
+body {
+  background-color: var(--bg-page);
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  width: 80%;
+}
+
+header {
+  height: 50px;
+  background-color: var(--bg-header);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .box1, header .box2{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 20%;
+    
+}
+header .box1{
+    width: 30%;
+    padding-left: .5em;
+}
+header span{
+    font-size: 16px;
+}
+
+.sub-header {
+  display: flex;
+}
+.sub-header .box1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 280px;
+  background-image: url('./images/montanhas.jpg');
+}
+.sub-header .box1 img{
+  width: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.sub-header .box1 {
+  width: 280px;
+  /* background-color: #438afc; */
+}
+
+.sub-header .box2 {
+  width: 50%;
+  /* background-color: var(--bg-header); */
+}
+
+.sidebar {
+  min-width: 280px;
+  background-color: var(--bg-sidebar);
+  padding: 30px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  height: 800px;
+  /* overflow-y: auto; */
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: .5em;
+
+
+}
+#search{
+    outline: none;
+    border: none;
+}
+.seach-box, .material-icons{
+    font-size: 24px;
+    color: var(--icon-color-search);
+}
+.menu-section{
+    border: none;
+    margin-top: 1.5em;
+    border-bottom: 1px solid var(--icon-color-default);
+    padding-bottom: 20px;
+    
+}
+
+.menu-section h3{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--section-title);
+    margin-bottom: .5em;
+
+}
+.menu-section ul{
+    list-style: none;
+}
+.menu-section .menu-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+main {
+  display: flex;
+  /* background-color: pink; */
+}
+
+.content {
+  width: 100%;
+  padding: 30px;
+  min-height: 100%;
+}
+.content .card1{
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .card1 .statistics {
+  width: 45%;
+  background-color: var(--bg-sidebar);
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .card1 .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  border: 1PX solid var(--bg-page);
+
+}
+
+.content .card1 .info .icons {
+  font-size: 32px;
+
+}
+.content .card1 .info .box2{
+  gap: 20px;
+}
