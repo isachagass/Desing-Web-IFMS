@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+
+  /* ===== PRIMARY ===== */
+  --color-primary: #7C4DFF;
+  --color-primary-light: #A78BFA;
+  --color-primary-dark: #5B21B6;
+
+  /* ===== SECONDARY ===== */
+  --color-secondary: #22C55E;
+  --color-secondary-light: #86EFAC;
+
+  /* ===== ALERT ===== */
+  --color-danger: #FF5A5F;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+
+  /* ===== BACKGROUNDS ===== */
+  --bg-main: #F5F6FA;
+  --bg-sidebar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F3F4F6;
+
+  /* ===== TEXT ===== */
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --text-white: #FFFFFF;
+
+  /* ===== BORDER ===== */
+  --border-color: #E5E7EB;
+
+  /* ===== CHART COLORS ===== */
+  --chart-purple: #7C4DFF;
+  --chart-green: #34D399;
+  --chart-lime: #C4F000;
+  --chart-blue: #60A5FA;
+  --chart-orange: #FB923C;
+
+  /* ===== STATUS ===== */
+  --success: #22C55E;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+
+  /* ===== SHADOW ===== */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+
+  /* ===== RADIUS ===== */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body, .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+}
+
+aside{
+    border: 1px solid red;
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.container aside .title{
+    width: 100%;
+    height: 15vh;
+    padding-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border: 1px solid red;
+}
+.container aside .title h1{
+    color: var(--text-primary);
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+}
+.container aside .title h1 span{
+    color: var(--chart-purple);
+    font-size: 1.7em;
+    margin-right: .1em;
+}
+.container aside .title .title-span{
+    color: var(--bg-card);
+    font-size: 1em;
+    background-color: var(--chart-purple);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+
+
+
+
+.container .content{
+    width: 85%;
+    height: 100vh;
+}
+header{
+    border: 1px solid red;
+    width: 100%;
+    height: 15vh;
+    padding-top: 1.5em;
+
+}
+main{
+    border: 1px solid red;
+    width: 100%;
+    height: 85vh;
+}
