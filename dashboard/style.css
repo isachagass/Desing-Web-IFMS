@@ -79,15 +79,16 @@ aside{
     width: 100%;
     height: 15vh;
     padding-top: 1.5em;
+    padding-left: 1.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
-    border: 1px solid red;
+    border: 1px solid var(--bg-hover);
 }
 .container aside .title h1{
     color: var(--text-primary);
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: flex;
     align-items: center;
 }
@@ -97,13 +98,65 @@ aside{
     margin-right: .1em;
 }
 .container aside .title .title-span{
-    color: var(--bg-card);
-    font-size: 1em;
+    width: 7%;
+    height: 30%;
     background-color: var(--chart-purple);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.container aside .title .title-span span{
+    color: var(--bg-card); 
+    font-size: 1.3em;
+    font-weight: 300;
 
+}
+.container aside .box1{
+    width: 100%;
+    height: 60vh;
+    padding: 1.5em;
+    
+    border: 1px solid red;
+}
+.container aside .box1 .menu-title{
+    width: 85%;
+    padding-bottom: .6em;
+    color: var(--text-muted);
+    font-size: 1em;
+    border-bottom: 1px solid var(--bg-hover);
+}
+.container aside .box1 .itens{
+    width: 100%;
+    height: 90%;
+    padding-top: 1em;
+    font-size: 1.1  em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.container aside .box1 .itens .selected{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--chart-purple);
+    /* margin: .8em 0px; */
+}
+.container aside .box1 .itens .selected p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    gap: .3em;
+    
+}
+.container aside .box1 .itens .menu-iten{
+    display: flex;
+    align-items: center;
+    gap: .3em;    
+}
 
 
 
