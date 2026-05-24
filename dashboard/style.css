@@ -826,11 +826,14 @@ main .box2 .box-mapa .porcentagem p span{
     height: 23%;
     padding: 0em .5em;
     border-radius: 5px;
-    background-color: var(--bg-hover);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: .7em;
+}
+.box2 .box-mapa .legenda .pais-gray{
+    background-color: var(--bg-hover);
+
 }
 .box2 .box-mapa .legenda .pais .nome-pais{
     display: flex;
