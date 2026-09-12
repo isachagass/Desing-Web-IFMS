@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2</title>
+    <title>aula 5 - acoes em formularios</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script1.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        
-    </div>
+    <main>
+        <div class="container">
+            <h1>
+                Digite itens na lista
+            </h1>
+            <label for="nome">Nome:</label>
+            <input type="text" nome="" id="nome">
+            <button id="bt-add">adicionar</button>
+            <h2>lista:</h2>
+            <div class="lista">
+                <ul id="result-ul"></ul>
+            </div>
+
+            <!-- 
+            <div id="result">Cliquei (n)x</div>
+            evento onclik tambem pode ser usado, mas polui o html -->            
+            <button id="bt-mais">+</button>
+            <button id="bt-menos">-</button>
+            
+            
+        </div>
+
+    </main>
 </body>
 </html>
