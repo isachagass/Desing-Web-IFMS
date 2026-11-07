@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+    background: #000000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 30dvw;
+    height: 30dvh;
+    background-color: rgb(44, 37, 37);
+    border-radius: 12px;
+}
+
+.container h1 {
+    color: #fff;
+}
+
+.container #campo {
+    width: 15rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+.container button {
+    width: 8rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    transform: scale(1.05);
+}
